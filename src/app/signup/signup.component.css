@@ -1,0 +1,26 @@
+.signup{
+    background-color: whitesmoke;
+    height: 720px;
+}
+.img
+{
+    width: 550px;
+}
+.card
+{
+    width: 800px;
+    margin-left: 590px;
+    margin-top: -490px;
+}
+h1{
+    color: dodgerblue;
+    padding-left: 220px;
+}
+.btn-primary
+{
+    margin-left: 270px;
+}
+.btn-secondary
+{
+    margin-left: 20px;
+}

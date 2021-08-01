@@ -1,0 +1,30 @@
+{
+  "signup": [
+    {
+      "name": "joe",
+      "firstName": "joe",
+      "lastName": "joe",
+      "dob": "1999-03-28",
+      "age": 22,
+      "more": {
+        "address_line1": "karur",
+        "address_line2": "karur",
+        "address_line3": "karur",
+        "phone": "7708825305"
+      }
+    },
+    {
+      "name": "joe",
+      "firstName": "Pranava",
+      "lastName": "jothi",
+      "dob": "1999-03-11",
+      "age": 20,
+      "more": {
+        "address_line1": "Rajaji street",
+        "address_line2": "karur",
+        "address_line3": "karur-639001",
+        "phone": "9629996162"
+      }
+    }
+  ]
+}

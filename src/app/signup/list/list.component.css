@@ -1,0 +1,13 @@
+.card-body
+{
+   
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+}
+.view
+{
+    margin:100px;
+    color: dodgerblue;
+    font-weight: bold;
+}

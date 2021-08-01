@@ -1,0 +1,70 @@
+<div class="signup">
+    <img src="../../assets/images/signup.png" class="img" alt="...">
+    <div class="container card">
+        <div class="card-header">
+            <h1>Signup Here...!</h1>
+        </div>
+        <div class="card-body">
+            <form (ngSubmit)="signupPostComponent()" [formGroup]="signupForm">
+                <fieldset>
+                    <div class="row">
+                        <div class="col">
+                            <label for="Name" class="form-label">Name</label>
+                            <input type="text" class="form-control" formControlName="name">
+                        </div>
+                        <div class="col">
+                            <label for="dob" class="form-label">DOB</label>
+                            <input type="date" class="form-control" formControlName="dob">
+                        </div>
+                        <div class="col">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" formControlName="firstName">
+                        </div>
+                        <div class="col">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" formControlName="lastName">
+                        </div>
+                        <div class="col">
+                            <label for="age" class="form-label">Age</label>
+                            <input type="number" class="form-control" formControlName="age">
+                        </div>
+                    </div>
+                    <form [formGroup]="addressForm">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="address_line1" class="form-label">Address_Line1</label>
+                                <input type="text" class="form-control" formControlName="address_line1">
+                            </div>
+
+                            <div class="col">
+                                <label for="userCategory" class="form-label">Address_Line2</label>
+                                <input type="text" class="form-control" formControlName="address_line2">
+                            </div>
+
+
+
+                            <div class="col">
+                                <label for="email" class="form-label">Address_Line3</label>
+                                <input type="text" class="form-control" formControlName="address_line3">
+                            </div>
+
+                            <div class="col">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input type="text" class="form-control" formControlName="phone">
+                            </div>
+
+
+                        </div>
+                    </form>
+                    <div class="card-footer">
+                        <a [routerLink]="['/user-login/login']" routerLinkActive="router-link-active">Go To Login</a>
+
+                        <button class="btn btn-primary">Submit</button>
+                        <button class="btn btn-secondary" (click)="cancel()">Cancel</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="login">
+    <img src="../../assets/images/signup.png" class="img" alt="...">
+    <div class="container card">
+        <div class="card-header">
+            <h1>Login Here...!</h1>
+        </div>
+        <div class="card-body">
+            <form (ngSubmit)="loginPostComponent()" [formGroup]="loginForm">
+                <fieldset>
+
+                    <div>
+                        <label for="Name" class="form-label">Name</label>
+                        <input type="text" class="form-control" formControlName="name">
+                    </div>
+                    <div>
+                        <label for="Phone" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" formControlName="phone">
+                    </div>
+                    &nbsp;
+
+
+                    <div class="card-footer">
+                        <a [routerLink]="['/user-signup/signup']">Go To Signup</a>
+                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-secondary" (click)="cancel()">Cancel</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
